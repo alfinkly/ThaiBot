@@ -64,10 +64,10 @@ class TelegramBot:
         data = {
             "model": "gpt-3.5-turbo",
             "messages": [{"role": "user", "content": text}],
-            "max_tokens": 150,
+            "max_tokens": 1024,
             "n": 1,
             "stop": None,
-            "temperature": 1.0,
+            "temperature": 0.9,
         }
 
         async with aiohttp.ClientSession() as session:
